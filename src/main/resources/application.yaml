@@ -9,8 +9,10 @@ spring:
   datasource:
     url: "jdbc:mysql://localhost:3306/identity_service"
     username: root
-    password: admin
+    password: root
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
+jwt:
+  signerKey: "sk8ZtJaJEmu6JELh9yAnNSD7DW7IfAGK75iOrtOgbxc2VY2PmMTvlKJLDyTeSpMF"

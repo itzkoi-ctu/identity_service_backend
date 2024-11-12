@@ -1,13 +1,11 @@
 package com.koi.identity_service.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDate;
+import java.util.List;
 @Data
 @Builder
 @NoArgsConstructor
@@ -23,6 +21,8 @@ public class User {
      String firstName;
      String lastName;
      LocalDate dob;
+//     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL,orphanRemoval = true)
+//    List<Post> posts;
 
 
 }

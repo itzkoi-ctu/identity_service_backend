@@ -2,18 +2,18 @@ package com.koi.identity_service.exception;
 
 public class AppException extends RuntimeException{
 
-    private ErorrCode erorrCode;
+    private ErrorCode erorrCode;
 
-    public AppException(ErorrCode erorrCode) {
+    public AppException(ErrorCode erorrCode) {
         super(erorrCode.getMessage());
         this.erorrCode = erorrCode;
     }
 
-    public ErorrCode getErorrCode() {
+    public ErrorCode getErorrCode() {
         return erorrCode;
     }
 
-    public void setErorrCode(ErorrCode erorrCode) {
+    public void setErorrCode(ErrorCode erorrCode) {
         this.erorrCode = erorrCode;
     }
 }
